@@ -13,7 +13,7 @@
         "nkro": true
     },
     "matrix_pins": {
-        "cols": ["GP22", "GP26", "GP27", "GP28"],
+        "cols": ["GP22", "GP26", "GP27", "GP28", "GP29"],
         "rows": ["GP7", "GP8", "GP9"]
     },
     "url": "",
@@ -29,6 +29,10 @@
                 {"matrix": [0, 1], "x": 1, "y": 0},
                 {"matrix": [0, 2], "x": 2, "y": 0},
                 {"matrix": [0, 3], "x": 3, "y": 0},
+
+                {"matrix": [0, 4], "x": 4, "y": 0}, // Encoder Switch
+
+
                 {"matrix": [1, 0], "x": 0, "y": 1},
                 {"matrix": [1, 1], "x": 1, "y": 1},
                 {"matrix": [1, 2], "x": 2, "y": 1},
