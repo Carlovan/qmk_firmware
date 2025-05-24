@@ -1,3 +1,5 @@
+#pragma once
+
 #define I2C_DRIVER I2CD1
 #define I2C1_SDA_PIN GP2
 #define I2C1_SCL_PIN GP3
@@ -6,10 +8,12 @@
 
 #define OLED_DISPLAY_128X64
 
-// #define ENCODER_A_PINS { GP6 }
-// #define ENCODER_B_PINS { GP5 }
+#define NUMBER_OF_ENCODERS 1
 
-// #define ENCODER_RESOLUTION 4
-// #define ENCODER_MAP_KEY_DELAY 10
+#define ENCODER_A_PINS { GP6 }
+#define ENCODER_B_PINS { GP5 }
+
+#define ENCODER_RESOLUTION 4
+#define ENCODER_MAP_KEY_DELAY 10
 
 
