@@ -6,7 +6,7 @@
 
 * A custom firmware for Khor R12 keypad by ITLabs *
 
-> see [QMK fork](https://github.com/itarozzi/qmk_firmware/tree/itarozzi)
+> see [QMK fork on github](https://github.com/itarozzi/qmk_firmware/tree/itarozzi/keyboards/r12_it)
 
 Based on the original work by [Khor](https://github.com/MoltenKhor/R12) this firmware build is intended to use the keypad as controller for my favorite applications.
 
@@ -14,7 +14,7 @@ The **R12 keypad** consists of:
 
 - a 4x3 Matrix Switch 
 - a single Encoder with push switch
-= an I²C Oled Display
+- an I²C Oled Display
 
 ## Hardware details
 
