@@ -1,7 +1,7 @@
 # k12 (itlabs version)
 
 
-![k12](https://imgur.com/7I1SfpP)
+![k12](https://imgur.com/7I1SfpP.jpg)
 
 
 * A custom firmware for Khor R12 keypad by ITLabs *
