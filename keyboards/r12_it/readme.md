@@ -1,12 +1,63 @@
-# k12
+# k12 (itlabs version)
 
-![k12](imgur.com image replace me!)
 
-*A short description of the keyboard/project*
+![k12](https://imgur.com/a/SCxU86b)
+
+
+* A custom firmware for Khor R12 keypad by ITLabs *
+
+> see [QMK fork](https://github.com/itarozzi/qmk_firmware/tree/itarozzi)
+
+Based on the original work by [Khor](https://github.com/MoltenKhor/R12) this firmware build is intended to use the keypad as controller for my favorite applications.
+
+The **R12 keypad** consists of:
+
+- a 4x3 Matrix Switch 
+- a single Encoder with push switch
+= an I²C Oled Display
+
+## Hardware details
+
+The **R12 Keypad** use a **Helios** board based on **RP2040** microcontroller.
+ 
+
+The 4x3 matrix uses pins described in keyboard.json file.
+
+```
+/*
+     * Matrix Layout and Pinout
+     
+            GP22 GP26 GP27 GP28    GP29
+           ┌────┬────┬────┬────┬──────────────┐
+      GP7  │  0 │  1 │  2 │  3 │ EncoderSwitch│
+           ├────┼────┼────┼────┼──────────────┤ 
+      GP8  │  4 │  5 │  6 │  7 │    n.c.
+           ├────┼────┼────┼────┤
+      GP9  │  8 │  9 │ 10 │ 11 │    n.c.
+           └────┴────┴────┴────┘
+           
+*/
+``` 
+
+The Encoder switch is connected to GP29 and GP7 pins, so it can be used
+in the matrix controller, as regular keyboard switch
+
+The encoder is connected directly to pins GP6 and GP5
+
+The I2C display is connected to SDA/SCL pins (GP6, GP5) 
+
+
+> I modified original R12 `keyboard.json` file adding encoder switch connections.
+
+> According the new layout definied in `keyboard.json` the keymaps array in the `keymap.c` should be updated, adding a more key.
+
+
+
+## Original informations
 
 * Keyboard Maintainer: [Marco Pontone](https://github.com/MoltenKhor)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Hardware Supported: *Khor R12*
+* Hardware Availability: [Khor](https://github.com/MoltenKhor/R12)
 
 Make example for this keyboard (after setting up your build environment):
 
